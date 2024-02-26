@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="img/flav.png" type="image/x-icon">
+<style>
+</style>
+</head>
+<body>
+<header>
+    <div class="up-footer">
+        <a href="#" class="logo"> <img src="img/logo.png" alt="Іконка"> </a>
+        <div class="navigation">
+            <div class="dropdown">
+                   <a href="#" class="dropbtn">About us</a>
+                <div class="dropdown-content">
+                    <a href="#">Interior Design</a>
+                    <a href="#">Exterior Design</a>
+                    <a href="#">Consulting</a>
+                </div>
+            </div>
+            <div class="dropdown">
+               <a href="#" class="dropbtn">Specialist</a>
+                <div class="dropdown-content">
+                    <a href="#">Architects</a>
+                    <div class="nested-dropdown">
+                        <div class="dropdown-content">
+                            <a href="#">Landscape designer</a>
+                            <a href="#">Industrial designer</a>
+                            <a href="#">Web designer</a>
+                        </div>
+                    </div>
+                    <a href="#">Designers</a>
+                </div>
+            </div>
+            <a href="#">For home</a>
+        </div>
+        <div class="Sign">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+</header>
+
+<div class="containeer">
+    <div class="title">
+        <hr>
+        <div class="container">    
+            <h2 class="text-25">Your space is a reflection of your style and individuality</h2>
+            <h1 class="text-55">Design that impresses</h1>
+            <h2 class="text-25">Feet Lesia R</h2>
+        </div>
+        <hr>
+    </div>
+</div>  
+
+<div class="container1">
+    <img src="img/fon.png" alt="Фотофон" class="img-container1">
+    <video id="bg-video" class="bg-video" loop muted>
+        <source src="vid.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+</body>
+</html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("bg-video");
+
+    video.addEventListener("mouseenter", function() {
+        this.play();
+    });
+
+    video.addEventListener("mouseleave", function() {
+        this.pause();
+        this.currentTime = 0;
+    });
+});
+</script>
